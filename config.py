@@ -15,3 +15,11 @@ STREAM_INTERVALS = {
     11: 900,  # Course Automation
     12: 360   # Micro-Niche Affiliate Sites
 }
+
+import os
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+MESHY_API_KEY = os.getenv("MESHY_API_KEY")
+PRINTIFY_API_KEY = os.getenv("PRINTIFY_API_KEY")
+GUMROAD_TOKEN = os.getenv("GUMROAD_ACCESS_TOKEN")
+PAYHIP_API_KEY = os.getenv("PAYHIP_API_KEY")
