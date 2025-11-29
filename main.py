@@ -14,5 +14,8 @@ def main():
 
         time.sleep(60)  # loop every minute
 
+from publishing_mode import run_publishing_loop
+
 if __name__ == "__main__":
-    main()
+    run_publishing_loop()
+
