@@ -17,7 +17,7 @@ STREAM_INTERVALS = {
 }
 
 import os
-
+BACKEND_URL = "https://jravis-backend.onrender.com"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MESHY_API_KEY = os.getenv("MESHY_API_KEY")
 PRINTIFY_API_KEY = os.getenv("PRINTIFY_API_KEY")
