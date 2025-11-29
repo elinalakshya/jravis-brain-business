@@ -14,6 +14,17 @@ def main():
 
         time.sleep(60)  # loop every minute
 
+# JRAVIS-BRAIN — FULL PUBLISH MODE MAIN FILE
+# Sends continuous publishing tasks to jravis-backend
+
+from publishing_mode import run_publishing_loop
+
+if __name__ == "__main__":
+    print("🔥 JRAVIS-BRAIN — PUBLISH MODE STARTING")
+    print("🤖 Generating & publishing tasks 24/7")
+    run_publishing_loop()
+
+
 from publishing_mode import run_publishing_loop
 
 if __name__ == "__main__":
