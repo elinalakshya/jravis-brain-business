@@ -25,8 +25,12 @@ if __name__ == "__main__":
     run_publishing_loop()
 
 
+# JRAVIS-BRAIN — FULL PUBLISH MODE
+
 from publishing_mode import run_publishing_loop
 
 if __name__ == "__main__":
+    print("🔥 JRAVIS-BRAIN — PUBLISH MODE STARTING")
+    print("🤖 Generating & publishing tasks 24/7")
     run_publishing_loop()
 
