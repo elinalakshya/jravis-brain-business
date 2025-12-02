@@ -1,5 +1,5 @@
 # ============================================================
-#        JRAVIS MASTER BRAIN — MISSION 2040 CONFIG
+# JRAVIS MASTER BRAIN — Mission 2040 Autonomous System
 # ============================================================
 
 JRAVIS_BRAIN = {
@@ -7,36 +7,36 @@ JRAVIS_BRAIN = {
     # --------------------------------------------------------
     # 1. IDENTITY & AUTHORITY
     # --------------------------------------------------------
-   "identity": {
-    "owner": "Boss",
-    "boss_email": "nrveeresh327@gmail.com",
-    "family_contact_email": "ADD_FAMILY_EMAIL",
-    "ignore_others": True,
-    "mode": "Mission2040-Autonomous",
-    "final_authority": True
-},
+    "identity": {
+        "owner": "Boss",   # MUST MATCH EXACTLY
+        "boss_email": "nrveeresh327@gmail.com",
+        "family_contact_email": "ADD_FAMILY_EMAIL_HERE",
+        "ignore_others": True,
+        "mode": "Mission2040-Autonomous",
+        "final_authority": True
+    },
 
     # --------------------------------------------------------
     # 2. FINANCIAL TARGETS
     # --------------------------------------------------------
     "financial_targets": {
-        "monthly_net_target": 3500000,        # ₹35 Lakhs NET income goal
+        "monthly_net_target": 3500000,  # ₹35 Lakhs NET per month
         "annual_turnover_growth": {
-            "2026": 40000000,   # 4 Cr
-            "2027": 60000000,   # 6 Cr
-            "2028": 80000000,   # 8 Cr
-            "2029": 90000000,   # 9 Cr
-            "2030": 110000000,  # 11 Cr
-            "2031": 130000000,  # 13 Cr
-            "2032": 150000000,  # 15 Cr
-            "2033": 180000000,  # 18 Cr
-            "2034": 200000000,  # 20 Cr
-            "2040": 500000000   # 50 Cr+ goal
+            "2026": 40000000,
+            "2027": 60000000,
+            "2028": 80000000,
+            "2029": 90000000,
+            "2030": 110000000,
+            "2031": 130000000,
+            "2032": 150000000,
+            "2033": 180000000,
+            "2034": 200000000,
+            "2040": 500000000
         }
     },
 
     # --------------------------------------------------------
-    # 3. EARNING STRATEGY PRIORITY
+    # 3. PRIORITY STREAM STRATEGY
     # --------------------------------------------------------
     "earning_strategy": {
         "priority_streams": [
@@ -46,21 +46,20 @@ JRAVIS_BRAIN = {
             "template_machines",
             "multi_market_uploaders",
             "newsletter_monetization",
-            "pod_mega_stores",
-            "dropshipping_shopify"
+            "pod_mega_stores"
         ],
         "automation_level": "full",
         "rules": [
-            "Always generate original, legal, ethical content",
-            "Respect all platform terms & policies",
-            "Prioritize high-income streams first",
-            "Scale content production to reach income targets",
-            "Optimize content quality and conversion rates"
+            "Always generate legal, unique, ethical content",
+            "Respect platform terms & policies",
+            "Prioritize high-income streams",
+            "Scale content to reach income targets",
+            "Optimize for conversions"
         ]
     },
 
     # --------------------------------------------------------
-    # 4. CONTENT SAFETY & QUALITY
+    # 4. CONTENT SAFETY
     # --------------------------------------------------------
     "content_safety": {
         "unique_generation": True,
@@ -70,10 +69,10 @@ JRAVIS_BRAIN = {
         "quality_standard": "premium",
         "forbidden_content": [
             "copyright violation",
-            "illegal topics",
-            "sexual content",
+            "harmful content",
             "violence",
-            "hate",
+            "sexual content",
+            "hate speech",
             "politics"
         ]
     },
@@ -94,8 +93,7 @@ JRAVIS_BRAIN = {
         "kill_switch": {
             "enabled": True,
             "requires_2fa": True,
-            "requires_lock_code": True,
-            "purpose": "Immediately stop all money operations"
+            "requires_lock_code": True
         }
     },
 
@@ -104,9 +102,8 @@ JRAVIS_BRAIN = {
     # --------------------------------------------------------
     "payout_settings": {
         "primary_method": "PayPal",
-        "auto_transfer": False,               # JRAVIS cannot trigger bank transfers
-        "platform_routing_required": True,    # Use each platform's payout settings
-        "verify_reconciliation": True,        # Match every rupee
+        "platform_routing_required": True,
+        "verify_reconciliation": True,
         "invoice_match_required": True
     },
 
@@ -137,7 +134,7 @@ JRAVIS_BRAIN = {
     "alerts": {
         "critical_alerts": [
             "payment_failure",
-            "missing_payout",
+            "payout_missing",
             "security_breach",
             "unauthorized_access",
             "data_corruption"
@@ -148,7 +145,7 @@ JRAVIS_BRAIN = {
     },
 
     # --------------------------------------------------------
-    # 9. BACKUP, AUDIT & LOGGING
+    # 9. BACKUP & AUDIT
     # --------------------------------------------------------
     "audit": {
         "self_audit_enabled": True,
@@ -178,7 +175,7 @@ JRAVIS_BRAIN = {
         "auto_publishing": True,
         "auto_scaling": True,
         "auto_fix_errors": True,
-        "heartbeat_interval_seconds": 60,    # Keep-alive for VA Bot
+        "heartbeat_interval_seconds": 60,
         "idle_restart_minutes": 10
     },
 
@@ -192,11 +189,11 @@ JRAVIS_BRAIN = {
     },
 
     # --------------------------------------------------------
-    # 13. LIMITATIONS — JRAVIS RULE
+    # 13. JRAVIS LIMITATIONS & RULESET
     # --------------------------------------------------------
     "limitations": {
-        "jravis_100_mode": True,     # Use 100% capacity
-        "must_obey_boss": True,      # But Boss overrides all decisions
-        "safety_first": True         # Never break legal or platform limits
+        "jravis_100_mode": True,
+        "must_obey_boss": True,
+        "safety_first": True
     }
 }
