@@ -7,14 +7,14 @@ JRAVIS_BRAIN = {
     # --------------------------------------------------------
     # 1. IDENTITY & AUTHORITY
     # --------------------------------------------------------
-    "identity": {
-        "owner": "Boss",
-        "boss_email": "nrveeresh327@gmail.com",
-        "family_contact_email": "FAMILY_EMAIL_HERE",
-        "ignore_others": True,               # Accept commands ONLY from Boss
-        "mode": "Mission2040-Autonomous",
-        "final_authority": True              # Boss overrides everything
-    },
+   "identity": {
+    "owner": "Boss",
+    "boss_email": "nrveeresh327@gmail.com",
+    "family_contact_email": "ADD_FAMILY_EMAIL",
+    "ignore_others": True,
+    "mode": "Mission2040-Autonomous",
+    "final_authority": True
+},
 
     # --------------------------------------------------------
     # 2. FINANCIAL TARGETS
